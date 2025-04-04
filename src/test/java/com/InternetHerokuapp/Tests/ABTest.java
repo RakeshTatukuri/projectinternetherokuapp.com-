@@ -35,9 +35,13 @@ public class ABTest extends SetUp {
 	@Test
 	public void header()
 	{
-		//step1: verify that the header of A/B Test Control
+		//step1: verify that the header of A/B Test Control/Variation 1
 				String act=abpage.getheader();
+				act=act.substring(0,19);
+				System.out.println("act------> "+act);
 				Assert.assertEquals(act, "A/B Test Variation 1");	
+				
+
 	}
 	@Test
 	public void verifyparagraphstartswith()
@@ -47,6 +51,7 @@ public class ABTest extends SetUp {
 		String actu=abpage.getparagraph();
 		boolean b=actu.startsWith(exp);
 		Assert.assertTrue(b);
+		
 	}
 	@Test
 	public void verifyparagraphendswith()
@@ -63,6 +68,7 @@ public class ABTest extends SetUp {
 		//step4: verify that the abtest page has "Elemental Selenium"
 		boolean b=abpage.seleniumbtnpres();
 		Assert.assertTrue(b);
+		
 	}
 	
 	

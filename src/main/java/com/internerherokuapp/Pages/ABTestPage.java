@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.InternetHerokuapp.base.SetUp;
+import com.internetkerokuapp.utils.Elementinteraction;
 
 public class ABTestPage extends SetUp {
 
@@ -32,7 +33,9 @@ public class ABTestPage extends SetUp {
 	//methods
 	 public  void clickonABTestlink()
 	{
-		abtestlink.click();	
+		//abtestlink.click();
+		// note: here we are using generic method
+		 Elementinteraction.myclick(abtestlink);//classname.methodname()
 	}
 	 
 	 //header

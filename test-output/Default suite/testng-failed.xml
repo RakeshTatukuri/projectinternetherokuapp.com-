@@ -5,7 +5,7 @@
     <classes>
       <class name="com.InternetHerokuapp.Tests.ABTest">
         <methods>
-          <include name="verifyelementseleniumbuttonispresent"/>
+          <include name="header"/>
         </methods>
       </class> <!-- com.InternetHerokuapp.Tests.ABTest -->
     </classes>

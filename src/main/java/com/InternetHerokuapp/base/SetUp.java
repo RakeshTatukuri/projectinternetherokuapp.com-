@@ -67,5 +67,6 @@ public class SetUp {
 	public static void main(String[] args) {
 		SetUp obj=new SetUp();
 		obj.initialization();
+	
 	}
 }
